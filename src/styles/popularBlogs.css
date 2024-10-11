@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.popular-blogs {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px;
+}
+
+.popular-heading {
+    margin: 40px 0;
+}
+
+.popular-heading h1 {
+    color: black;
+    font-size: 25px;
+    text-align: center;
+}
+
+.popular-cards{
+    border: 1px solid rgba(56, 56, 56, 0.226);
+    padding: 60px;
+}
+.pad-main{
+    padding: 10px;
+}
+.popular-single-card{
+    background-color: rgba(157, 157, 255, 0.144);
+    border-radius: 8px;
+}
+.popular-card-img{
+    max-width: 100%;
+    height: 230px;
+}
+.popular-card-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+}
+
+.popular-card-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.popular-category-batch {
+    margin: 15px 0;
+}
+
+.popular-category-batch span {
+    color: rgb(0, 0, 82);
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.popular-blog-title h3 {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.popular-blog-title h3 a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.popular-blog-title h3 {
+    text-align: center;
+}
+
+@media  screen and (max-width : 600px) {
+    .popular-cards{
+        padding: 20px;
+    }
+}

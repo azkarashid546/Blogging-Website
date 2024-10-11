@@ -1,0 +1,80 @@
+.footer-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    padding: 50px;
+    background-color: rgb(12, 12, 12)
+}
+.blogger-info h3{
+    color: white;
+    font-size: 25px;
+}
+.blogger-info{
+    margin-bottom: 40px;
+}
+.blogger-details span{
+    color: white;
+    font-size: 18px;
+}
+.blogger-details{
+    margin-bottom: 10px;
+}
+.footer-category-heading h4{
+    color: white;
+    font-size: 23px;
+}
+.footer-category-heading{
+    margin-bottom: 40px;
+}
+.footer-category-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.category-grid ul li{
+    list-style: none;
+}
+.category-grid ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 40px;
+}
+.footer-social-contacts-heading h4{
+    color: white;
+    font-size: 23px; 
+}
+.footer-social-contacts-heading{
+    margin-bottom: 40px;
+}
+.footer-social-contact-icons{
+    display: flex;
+    
+}
+.footer-contacts-icon{
+    width: 40px;
+    height: 40px;
+    border: 1px solid rgb(75, 74, 74);
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+}
+.footer-contacts-icon a i{
+    color: white;
+}
+@media screen and (max-width : 768px) {
+    .footer-category-grid{
+        display: inherit;
+    }
+}
+@media screen and (max-width : 600px) {
+    .footer-grid{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+    .footer-category-heading{
+        margin-bottom: 20px;
+    }
+}

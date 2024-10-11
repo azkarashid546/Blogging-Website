@@ -1,0 +1,135 @@
+.user-settings{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.user-data-heading{
+    margin-bottom: 35px;
+}
+.user-data-heading h1{
+    font-size: 35px;
+    text-align: center;
+}
+
+.user-data-single-fields{
+    display: flex;
+    /* align-items: center;
+    justify-content: center; */
+    margin: 18px 0;
+}
+.user-data-single-fields span{
+    font-size: 21px;
+    margin: 0 10px;
+}
+
+.user-data-input{
+    border: 1px solid rgba(0, 0, 0, 0.205);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+.user-data-input span{
+width: 100%;
+}
+/* .user-data-changes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+} */
+
+.user-profile{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.user-profile-heading h1{
+    text-align: center;
+    font-size: 35px;
+}
+.user-profile-heading{
+    margin-bottom: 35px;
+}
+
+.user-name{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.user-name span{
+    font-size: 40px;
+}
+.user-details{
+    font-size: 20px;
+    margin: 10px 0;
+}
+.user-details-list{
+    margin: 70px 0;
+}
+
+.user-settings{
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.user-settings{
+    margin-bottom: 35px;
+}
+.user-settings h1{
+   text-align: center; 
+   font-size: 35px;
+}
+
+
+.dark-mode{
+    margin: 60px 0;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.dark-mode p{
+font-size: 20px;
+}
+.dark-mode button{
+border: none;
+background-color: rgb(0, 0, 90);
+color: white;
+padding: 10px 20px;
+border-radius: 5px;
+font-size: 18px;
+}
+.dark-mode button:hover{
+    background-color: rgb(99, 99, 99);
+    color: white;
+}
+
+.change-profile{
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+.change-profile p{
+    font-size: 20px; 
+}
+
+.change-profile button{
+    border: none;
+    background-color: rgb(0, 0, 90);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    }
+    .change-profile button:hover{
+        background-color: rgb(99, 99, 99);
+        color: white;
+    }
+
+    .change-profile a{
+        text-decoration: none;
+        color: white;
+        font-size: 18px;
+    }

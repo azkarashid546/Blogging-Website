@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: white;
+    color: black;
+}
+
+.header {
+    padding: 0 25px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    color: black;
+    z-index: 1000;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2)
+
+}
+
+.search-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top-nav {
+    margin: 7px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.left-nav ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+}
+hr{
+    /* border-color: rgba(124, 124, 124, 0.418); */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.24)
+}
+
+.left-nav ul li {
+    list-style: none;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.right-nav ul {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.right-nav ul li {
+    list-style: none;
+    margin-right: 10px;
+}
+
+.right-nav ul li button {
+
+    border-style: none;
+    background-color: rgb(2, 2, 58);
+    color: white;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+.right-nav ul li button a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.bottom-nav {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 2fr 1fr;
+    margin: 13px 0;
+}
+
+.sticky-navbar {
+    position: static;
+    top: 0;
+    bottom: 0;
+}
+
+.bottom-nav .left-nav {
+    display: flex;
+    align-items: center;
+}
+
+.bottom-nav .left-nav img {
+    width: 70%;
+    height: auto;
+}
+
+.center-nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-nav ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.center-nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+.right-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.searchbar input {
+    border-style: none;
+    outline: none;
+    padding: 7px;
+    width: 100%;
+}
+
+.searchbar {
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 3px;
+    display: flex;
+}
+
+
+.fa-bars {
+    color: rgb(2, 2, 58);
+}
+
+.side-navbar {
+    display: flex;
+    display: none;
+}
+
+.mobile-navbar {
+    position: absolute;
+    z-index: 99;
+    top: 0;
+    width: 50%;
+    background-color: white;
+    color: black;
+    display: none;
+}
+
+.mobile-navbar nav {
+    height: 100%;
+    padding: 20px;
+
+    transition: all .8s ease-in-out;
+    display: block;
+}
+
+.logoAndCancelBtn {
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logoDiv img {
+    max-width: 80%;
+    height: auto;
+}
+
+.cancelDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.cancelDiv i {
+    color: black;
+}
+
+.mob-items {
+    padding: 25px;
+}
+
+.mob-item {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
+}
+
+.mob-item a {
+    text-decoration: none;
+    color: black;
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.mobile-navbar.mob-items {
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.mob-item button {
+    color: white;
+    background-color: rgb(2, 2, 58);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.mob-item button a {
+    color: white;
+    font-size: 16px;
+}
+
+.mobNav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: white;
+    padding-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.mobNav.open {
+    left: 0;
+    z-index: 9999999999999999999999;
+
+}
+
+@media screen and (max-width : 600px) {
+    .top-nav {
+        display: none;
+    }
+
+    .center-nav {
+        display: none;
+    }
+
+    .side-navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .mobile-left-nav {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .bottom-nav .left-nav img {
+        width: 30vw;
+        height: auto;
+    }
+
+    .bottom-nav {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .side-navbar-icons {
+        display: flex;
+        justify-content: flex-start;
+    }
+}

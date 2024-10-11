@@ -1,0 +1,59 @@
+.comment-form-heading h3{
+   font-size: 25px; 
+}
+.comment-form-heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+.comment-form-heading hr{
+    width: 70px;
+    border: 1px solid black;
+    margin: 10px 0;
+}
+.comment-form-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+.comment{
+    grid-column: 1 / span 2;
+}
+.comment-form-content input{
+    padding: 5px;
+    border: none;
+    border: 1px solid rgba(128, 128, 128, 0.425);
+    outline: none;
+}
+.comment-form-content textarea{
+    padding: 5px;
+    border: none;
+    border: 1px solid rgba(128, 128, 128, 0.425);
+    outline: none;
+}
+.comment-form-btn button{
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+}
+.comment-form-btn {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 30px 0;
+}
+
+@media screen and (max-width : 600px){
+    .comment-form-content{
+       
+        grid-template-columns: 1fr ;
+    }
+    .comment{
+        grid-column : inherit;
+    }
+}

@@ -1,0 +1,66 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.form {
+  max-width: 1200px;
+  margin: auto;
+}
+.signup-form {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0 25px;
+  gap: 20px;
+  
+}
+/* .signup{
+  width: 50%;
+  margin: auto;
+} */
+.signup-form .field {
+  display: grid;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+}
+
+.signup-form .field label {
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 7px 0;
+  white-space: nowrap;
+}
+
+.signup-form .field input {
+ 
+  padding: 17px 15px;
+  border: 1px solid gray;
+  border-radius: 10px;
+  color: black;
+  outline: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.signup-button button{
+  border: none;
+  background-color: rgb(0, 0, 63);
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+}
+.signup-button{
+  margin-right: 20px;
+}
+.contact-button{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: 40px;
+}
